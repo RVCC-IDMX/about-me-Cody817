@@ -7,7 +7,18 @@ body {
 
 h1, h2, h3, h4, h5, h6  {
     font-family:"Abril Fatface";
+    text-align:center;
+}
+
+h1 {
+    font-family:"Abril Fatface";
     font-size:50pt;
+}
+
+h2 {
+    font-family:"Abril Fatface";
+    font-size:20pt;
+    text-align:center;
 }
 
 header {
@@ -26,3 +37,16 @@ header {
 #bio {
     text-align:center;
 }
+
+#hobbies ul li:nth-child(-n+3) {
+    color: #66a3ff;
+}
+
+#hobbies ul li:nth-child(n+4):nth-child(-n+6) {
+    color:#B37D12
+}
+
+#hobbies ul li:nth-child(n+7) {
+    color:black
+}
+    
