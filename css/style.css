@@ -21,6 +21,11 @@ h2 {
     text-align:center;
 }
 
+h2 {
+    margin: .1em;
+}
+
+
 header {
     text-align:center;
 }
@@ -38,6 +43,13 @@ header {
     text-align:center;
 }
 
+
+section#hobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #hobbies ul li:nth-child(-n+3) {
     color: #66a3ff;
 }
@@ -49,6 +61,9 @@ header {
 #hobbies ul li:nth-child(n+7) {
     color:black
 }
+
+
+
 
 #gallery {
     border: 6px solid #4D93FF;
@@ -87,3 +102,8 @@ header {
     max-width: 50rem;
     margin: 0 auto;
 }
+
+@media screen and (min-width: 60em) {
+    
+}
+
