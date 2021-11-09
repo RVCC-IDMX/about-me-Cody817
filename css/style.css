@@ -1,7 +1,7 @@
 body {
     font-family:Raleway;
-    background-color:#0072FF;
-    color:#1BB361;
+    background-color:#F5F320;
+    color:#0004F0;
 
 }
 
@@ -30,10 +30,15 @@ header {
     text-align:center;
 }
 
+#hero {
+    text-align:center;
+}
+
 #hero, footer {
-    color:#1BB361;
-    border: 6px solid #1Aff83;
-    background-color:#1B5FB3;
+    color:#0004F0;
+    border: 6px solid #0004F0;
+    border-radius:2rem;
+    background-color:#F5F320;
     text-align:center;
 }
 
@@ -51,11 +56,11 @@ section#hobbies {
 }
 
 #hobbies ul li:nth-child(-n+3) {
-    color: #1BB361;
+    color: #0049F5;
 }
 
 #hobbies ul li:nth-child(n+4):nth-child(-n+6) {
-    color:#FF6C0E
+    color:#A36A10;
 }
 
 #hobbies ul li:nth-child(n+7) {
@@ -65,7 +70,8 @@ section#hobbies {
 
 
 #gallery {
-    border: 6px solid #1Aff83;
+    border: 6px solid #0004F0;
+    border-radius:2rem;
     margin-bottom:1rem;
     }
 
@@ -80,31 +86,34 @@ section#hobbies {
 }
 
 #gallery img {
-    border: 6px solid #1BB361
+    border: 6px solid #0004F0;
+    border-radius:2rem;
 }
 
 #gallery figcaption {
-    color:#FF6C0E
+    color:#A36A10;
 }
 
 #gallery figcaption {
-    border: 3px solid #1Aff83
+    border: 3px solid #0004F0;
+    border-radius:2rem;
 }
 
 #lit {
-    border: 6px solid #1Aff83;
+    border: 6px solid #0004F0;
+    border-radius:2rem;
     margin-bottom:1rem;
 }
 
 #lit div  p:first-child:first-letter {
-    color:#1BB361;
-    background-image: radial-gradient(white, #1B5FB3);
+    color:#0004F0;
+    background-image: radial-gradient(white, #F5F320);
     float: left;
     font-size: 3em;
     padding: .25em;
     margin-right: .25em;
     line-height: .65;
-    border: 4px outset #1BB361;
+    border: 4px outset #0004F0;
     text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
     box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
     border-top-left-radius:0.2em;
@@ -117,8 +126,12 @@ section#hobbies {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 375px) {
     
+    #hero img {
+        max-width:70%;
+        object-fit:cover;
+    }
 
 
     figcaption {
@@ -136,7 +149,7 @@ section#hobbies {
 
 }
 
-@media screen and (min-width: 100em) {
+@media screen and (min-width: 1200px) {
 
     #gallery {
         display: grid;
@@ -161,6 +174,48 @@ section#hobbies {
 
 #formElements {
     display:grid;
+    row-gap:.5em;
 
 }
 
+#contact{
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem  auto;
+
+}
+
+fieldset {
+    border: 2px solid #0004F0;
+    margin-top:1em;
+    margin-bottom:1em;
+    border-radius:2rem;
+}
+
+legend {
+    background-color: #0004F0;
+    color: white;
+}
+
+
+#contact input, #contact textarea, #contace select, #contact button {
+    padding: .75em;
+    font-size: 1em;
+    padding: 1em;
+}
+
+#contact ul {
+    list-style:none;
+    padding: 0px; 
+}
+
+#contact li {
+    margin: 1.5em; 
+}
+
+#contact button {
+    background-color: #0004F0;
+    color: white;
+    width:60%;
+    justify-self:center;
+}
